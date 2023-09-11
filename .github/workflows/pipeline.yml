@@ -9,6 +9,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+        env:
+          NODE_VERSION: 16
 
       - name: Package
         run: mvn
