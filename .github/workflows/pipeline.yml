@@ -13,7 +13,7 @@ jobs:
           NODE_VERSION: 16
 
       - name: Package
-        run: mvn
+        run: mvn clean install
         
   publish:
     runs-on: ubuntu-latest
